@@ -51,20 +51,41 @@
         width: 100%;
       }
 
-      
+      #indicator {
+        background-color: transparent;
+        border: 2px solid var(--navy-blue);
+        width: 12px;
+        height: 12px;
+        border-radius: 50%;
+      }
+
+      .carousel-indicators {
+        bottom: -50px;
+      }
+
+      .text-navy {
+        color: var(--navy-blue);
+      }
+
+      .text-orange {
+        color: var(--orange-color);
+      }
+
+      .carousel-control-prev-icon,
+      .carousel-control-next-icon {
+        background-color: var(--navy-blue);
+        top: auto;
+        bottom: 80px;
+      }
     </style>
   </head>
   <body>
     <!--nav-bar-->
 
-    <div class="navbar navbar-expand-lg" dir="rtl">
+    <div class="navbar navbar-expand-lg  fixed">
       <div class="container-fluid">
         <a href="" class="navbar-brand">
-          <img
-            src="./images/WhatsApp Image 2025-12-08 at 00.10.17.jpeg"
-            width="100px"
-            alt=""
-          />
+          <img src="./images/logo.jpeg" width="100px" height="130px" alt="" />
         </a>
         <button
           type="button"
@@ -76,19 +97,26 @@
           <span class="navbar-toggler-icon"></span>
         </button>
 
-        <div class="collapse navbar-collapse justify-content-center" id="navbarNav">
-          <ul class="navbar-nav gap-4 ">
+        <div
+          class="collapse navbar-collapse justify-content-center"
+          id="navbarNav"
+        >
+          <ul class="navbar-nav gap-4">
             <li class="navbar-item ps-4 mb-3">
-              <a href="" class="navbar-link text-decoration-none nav-link-color underline-hover"
+              <a
+                href=""
+                class="navbar-link text-decoration-none nav-link-color underline-hover"
                 >الصفحة الرئيسية</a
               >
             </li>
             <li class="navbar-item ps-4 mb-3">
-              <a href="" class="navbar-link text-decoration-none nav-link-color underline-hover"
+              <a
+                href=""
+                class="navbar-link text-decoration-none nav-link-color underline-hover"
                 >الأكثر مبيعاً</a
               >
             </li>
-            <li class="navbar-item dropdown  ps-4 mb-3">
+            <li class="navbar-item dropdown ps-4 mb-3">
               <a
                 href=""
                 class="navbar-link text-decoration-none dropdown-toggle nav-link-color underline-hover"
@@ -162,7 +190,9 @@
               >
             </li>
             <li class="navbar-item mb-3">
-              <a href="" class="navbar-link text-decoration-none nav-link-color underline-hover"
+              <a
+                href=""
+                class="navbar-link text-decoration-none nav-link-color underline-hover"
                 >التواصل</a
               >
             </li>
@@ -172,6 +202,159 @@
     </div>
 
     <!--end nav-bar-->
+
+    <!--header-section-->
+    <div class="container-fluid  pt-1">
+      <div class="container">
+        <div class="row justify-content-center">
+          <div class="col-md-9 mb-5">
+            <div
+              class="carousel slide carousel-fade"
+              id="slides-with-indicators"
+              data-bs-ride="carousel"
+            >
+              <div class="carousel-indicators">
+                <button
+                  id="indicator"
+                  class="active"
+                  type="button"
+                  data-bs-target="#slides-with-indicators"
+                  data-bs-slide-to="0"
+                ></button>
+
+                <button
+                  id="indicator"
+                  class="active"
+                  type="button"
+                  data-bs-target="#slides-with-indicators"
+                  data-bs-slide-to="1"
+                ></button>
+                <button
+                  id="indicator"
+                  class="active"
+                  type="button"
+                  data-bs-target="#slides-with-indicators"
+                  data-bs-slide-to="2"
+                ></button>
+              </div>
+              <div class="carousel-inner">
+                <div class="carousel-item active">
+                  <img
+                    src="./images/carousel-header1.jpg"
+                    alt=""
+                    height="505px"
+                    class="d-block w-100 rounded"
+                  />
+                  <div class="carousel-caption">
+                    <p
+                      class="border border-light bg-light text-dark fs-3 rounded bg-opacity-75 p-2"
+                    >
+                      كميرات مراقبة سلكية ولاسلكية للمنازل - للمكاتب -للشركات -
+                      للمؤسسات التعليمية
+                    </p>
+                  </div>
+                </div>
+
+                <div class="carousel-item">
+                  <img
+                    src="./images/carousel-header2.jpeg"
+                    alt=""
+                    height="505px"
+                    class="d-block w-100 rounded"
+                  />
+                  <div class="carousel-caption">
+                    <p
+                      class="border border-light bg-light text-dark fs-3 rounded bg-opacity-50 p-2"
+                    >
+                      تجميع كمبيوترات للأعمال الهندسية و العمارة للألعاب و
+                      التصميم و الأعمال المكتبية
+                    </p>
+                  </div>
+                </div>
+
+                <div class="carousel-item">
+                  <img
+                    src="./images/carousel-header3.jpg"
+                    alt=""
+                    height="505px"
+                    class="d-block w-100 rounded"
+                  />
+
+                  <div class="carousel-caption">
+                    <p
+                      class="border border-light bg-light text-dark fs-3 rounded bg-opacity-75 p-2"
+                    >
+                      متوفر لدينا كافة قطع الكمبيوتر و أحدث الاكسسوارات
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-3">
+            <div class="text-center">
+              <h5
+                class="fs-2 fw-bold text-navy border p-3 border-warning rounded"
+              >
+                عروض يومية
+              </h5>
+            </div>
+
+            <div
+              class="carousel slide"
+              id="slides-with-control"
+              data-bs-ride="carousel"
+            >
+              <div class="carousel-inner">
+                <div class="carousel-item active border border-warning rounded">
+                  <img src="./images/offer 1.jpg" alt="" class="img-fluid" />
+                  <p class="text-navy text-center mt-3">
+                    LENOVO NEO 50A 12SC001LTR i5-13420H 16GB 512GB SSD 23.8"
+                    MULTI TOUCH FDOS
+                  </p>
+                  <p class="text-center fs-3 text-orange">965$</p>
+                </div>
+                <div class="carousel-item border border-warning rounded">
+                  <img
+                    src="./images/offer2.jpg"
+                    alt=""
+                    class="img-fluid w-100 p-2"
+                  />
+                  <p class="text-navy text-center mt-3">
+                    PRITTEC Q7-TH610L BAREBONE FreeDos MINI PC/ (SSD-RAM-CPU
+                    YOK)
+                  </p>
+                  <p class="text-center fs-3 text-orange">250$</p>
+                </div>
+              </div>
+
+              <button
+                class="carousel-control-prev"
+                type="button"
+                data-bs-target="#slides-with-control"
+                data-bs-slide="prev"
+              >
+                <span class="carousel-control-prev-icon "></span>
+                <span class="visually-hidden">previous</span>
+              </button>
+
+              <button
+                class="carousel-control-next"
+                type="button"
+                data-bs-target="#slides-with-control"
+                data-bs-slide="next"
+              >
+                <span class="carousel-control-next-icon "></span>
+                <span class="visually-hidden">next</span>
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!--end header-section-->
 
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js"></script>
