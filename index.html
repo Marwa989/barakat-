@@ -77,6 +77,46 @@
         top: auto;
         bottom: 80px;
       }
+
+      
+.banner-img{
+  width: 100%;
+  height: 100%;
+}
+
+.image:hover .banner-img{
+  transform: scale(1.2);
+}
+       .image .overlay{
+        background: var(--orange-color);
+        top: 0;
+        
+        left: 0;
+        width: 90%;
+        height: 100%;
+        transform: skewX(-38deg);
+        transform-origin: top left;
+        z-index: 1;
+        opacity: 85%;
+        
+      }
+
+
+      .image .text-box{
+        position:absolute;
+        top: 50px;
+        left: 50px;
+        z-index: 2;
+        color: var(--white-color);
+          
+      }
+
+     
+
+      
+
+      
+
     </style>
   </head>
   <body>
@@ -355,6 +395,58 @@
     </div>
 
     <!--end header-section-->
+
+    <!--banner-section-->
+    <div class="container">
+      <div class="row justify-content-center mt-5">
+        <div class="col-md-4">
+          <div class="position-relative image mb-4" style=" height: 280px; overflow: hidden;" >
+            <img src="./images/laptop.webp" alt="" class="img-fluid bg-light border border-light banner-img">
+            
+              <div class="overlay position-absolute  ">
+               </div>
+                <div class="text-box text-center">
+                  <h2 class="mb-4">قسم الكمبيوتر</h2>
+                  <a href="" class="text-decoration-none text-white pe-4 fs-5">عرض المنتجات </a>
+                </div>
+              
+            
+          </div>
+          </div>
+        
+        <div class="col-md-4">
+          <div class="position-relative image mb-4" style=" height: 280px; overflow: hidden;" >
+            <img src="./images/mobile.webp" alt="" class="img-fluid bg-light border border-light banner-img">
+            
+              <div class="overlay position-absolute  ">
+               </div>
+                <div class="text-box text-center">
+                  <h2 class="mb-4">قسم الموبايل</h2>
+                  <a href="" class="text-decoration-none text-white pe-4 fs-5">عرض المنتجات </a>
+                </div>
+              
+            
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="position-relative image mb-4" style=" height: 280px; overflow: hidden;" >
+            <img src="./images/accessories.webp" alt="" class="img-fluid bg-light border border-light banner-img">
+            
+              <div class="overlay position-absolute  ">
+               </div>
+                <div class="text-box text-center">
+                  <h3 class="mb-4" >قسم الاكسسوارات</h3>
+                  <a href="" class="text-decoration-none text-white pe-4 fs-5 ">عرض المنتجات </a>
+                </div>
+              
+            
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+    <!--end banner-section-->
 
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js"></script>
