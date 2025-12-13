@@ -78,19 +78,20 @@
         bottom: 80px;
       }
 
-      
-.banner-img{
-  width: 100%;
-  height: 100%;
-}
+      .banner-img {
+        width: 100%;
+        height: 100%;
+      }
 
-.image:hover .banner-img{
-  transform: scale(1.2);
-}
-       .image .overlay{
+      .image:hover .banner-img {
+        transform: scale(1.2);
+       
+
+      }
+      .image .overlay {
         background: var(--orange-color);
         top: 0;
-        
+
         left: 0;
         width: 90%;
         height: 100%;
@@ -98,31 +99,34 @@
         transform-origin: top left;
         z-index: 1;
         opacity: 85%;
-        
       }
 
-
-      .image .text-box{
-        position:absolute;
+      .image .text-box {
+        position: absolute;
         top: 50px;
         left: 50px;
         z-index: 2;
         color: var(--white-color);
-          
       }
 
-     
+      .history{
+      
+        border: 2px solid var(--orange-color);
+      }
+
+
+      .history:hover{
+        border: 2px solid var(--navy-blue);
+        background-color: var(--orange-color);
+      }
 
       
-
-      
-
     </style>
   </head>
   <body>
     <!--nav-bar-->
 
-    <div class="navbar navbar-expand-lg  fixed">
+    <div class="navbar navbar-expand-lg fixed">
       <div class="container-fluid">
         <a href="" class="navbar-brand">
           <img src="./images/logo.jpeg" width="100px" height="130px" alt="" />
@@ -156,17 +160,17 @@
                 >الأكثر مبيعاً</a
               >
             </li>
-            <li class="navbar-item dropdown ps-4 mb-3">
+            <li class="navbar-item dropdown  ps-4 mb-3">
               <a
                 href=""
-                class="navbar-link text-decoration-none dropdown-toggle nav-link-color underline-hover"
+                class="navbar-link text-decoration-none dropdown-toggle nav-link-color "
                 role="button"
                 data-bs-toggle="dropdown"
                 data-bs-auto-close="outside"
                 >قسم الموبايل</a
               >
               <ul class="dropdown-menu">
-                <li><a href="" class="dropdown-item">موبايلات جديدة</a></li>
+                <li><a href="" class="dropdown-item ">موبايلات جديدة</a></li>
                 <li><a href="" class="dropdown-item">موبايلات مستعملة</a></li>
                 <li><a href="" class="dropdown-item">اكسسوارات الموبايل</a></li>
               </ul>
@@ -174,7 +178,7 @@
             <li class="navbar-item dropdown ps-4 mb-3">
               <a
                 href=""
-                class="navbar-link text-decoration-none dropdown-toggle nav-link-color underline-hover"
+                class="navbar-link text-decoration-none dropdown-toggle nav-link-color "
                 role="button"
                 data-bs-toggle="dropdown"
                 data-bs-auto-close="outside"
@@ -189,7 +193,7 @@
             <li class="navbar-item dropdown ps-4 mb-3">
               <a
                 href=""
-                class="navbar-link text-decoration-none dropdown-toggle nav-link-color underline-hover"
+                class="navbar-link text-decoration-none dropdown-toggle nav-link-color "
                 role="button"
                 data-bs-toggle="dropdown"
                 data-bs-auto-close="outside"
@@ -244,7 +248,7 @@
     <!--end nav-bar-->
 
     <!--header-section-->
-    <div class="container-fluid  pt-1">
+    <div class="container-fluid pt-1">
       <div class="container">
         <div class="row justify-content-center">
           <div class="col-md-9 mb-5">
@@ -375,7 +379,7 @@
                 data-bs-target="#slides-with-control"
                 data-bs-slide="prev"
               >
-                <span class="carousel-control-prev-icon "></span>
+                <span class="carousel-control-prev-icon"></span>
                 <span class="visually-hidden">previous</span>
               </button>
 
@@ -385,7 +389,7 @@
                 data-bs-target="#slides-with-control"
                 data-bs-slide="next"
               >
-                <span class="carousel-control-next-icon "></span>
+                <span class="carousel-control-next-icon"></span>
                 <span class="visually-hidden">next</span>
               </button>
             </div>
@@ -400,53 +404,125 @@
     <div class="container">
       <div class="row justify-content-center mt-5">
         <div class="col-md-4">
-          <div class="position-relative image mb-4" style=" height: 280px; overflow: hidden;" >
-            <img src="./images/laptop.webp" alt="" class="img-fluid bg-light border border-light banner-img">
-            
-              <div class="overlay position-absolute  ">
-               </div>
-                <div class="text-box text-center">
-                  <h2 class="mb-4">قسم الكمبيوتر</h2>
-                  <a href="" class="text-decoration-none text-white pe-4 fs-5">عرض المنتجات </a>
-                </div>
-              
-            
+          <div
+            class="position-relative image mb-4"
+            style="height: 280px; overflow: hidden"
+          >
+            <img
+              src="./images/laptop.webp"
+              alt=""
+              class="img-fluid bg-light border border-light banner-img"
+            />
+
+            <div class="overlay position-absolute"></div>
+            <div class="text-box text-center">
+              <h2 class="mb-4">قسم الكمبيوتر</h2>
+              <a href="" class="text-decoration-none text-white pe-4 fs-5"
+                >عرض المنتجات
+              </a>
+            </div>
           </div>
-          </div>
-        
+        </div>
+
         <div class="col-md-4">
-          <div class="position-relative image mb-4" style=" height: 280px; overflow: hidden;" >
-            <img src="./images/mobile.webp" alt="" class="img-fluid bg-light border border-light banner-img">
-            
-              <div class="overlay position-absolute  ">
-               </div>
-                <div class="text-box text-center">
-                  <h2 class="mb-4">قسم الموبايل</h2>
-                  <a href="" class="text-decoration-none text-white pe-4 fs-5">عرض المنتجات </a>
-                </div>
-              
-            
+          <div
+            class="position-relative image mb-4"
+            style="height: 280px; overflow: hidden"
+          >
+            <img
+              src="./images/mobile.webp"
+              alt=""
+              class="img-fluid bg-light border border-light banner-img"
+            />
+
+            <div class="overlay position-absolute"></div>
+            <div class="text-box text-center ">
+              <h2 class="mb-4">قسم الموبايل</h2>
+              <a href="" class="text-decoration-none text-white pe-4 fs-5"
+                >عرض المنتجات
+              </a>
+            </div>
           </div>
         </div>
         <div class="col-md-4">
-          <div class="position-relative image mb-4" style=" height: 280px; overflow: hidden;" >
-            <img src="./images/accessories.webp" alt="" class="img-fluid bg-light border border-light banner-img">
-            
-              <div class="overlay position-absolute  ">
-               </div>
-                <div class="text-box text-center">
-                  <h3 class="mb-4" >قسم الاكسسوارات</h3>
-                  <a href="" class="text-decoration-none text-white pe-4 fs-5 ">عرض المنتجات </a>
-                </div>
-              
-            
+          <div
+            class="position-relative image mb-4"
+            style="height: 280px; overflow: hidden"
+          >
+            <img
+              src="./images/accessories.webp"
+              alt=""
+              class="img-fluid bg-light border border-light banner-img"
+            />
+
+            <div class="overlay position-absolute"></div>
+            <div class="text-box text-center me-5">
+              <h3 class="mb-4">قسم الاكسسوارات</h3>
+              <a href="" class="text-decoration-none text-white pe-4 fs-5"
+                >عرض المنتجات
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!--end banner-section-->
+
+    <!--best-sellers-section-->
+  <!-- <div class="container">
+      <div class="row justify-content-between">
+        <div class="col-md-3">
+          <div>
+            <h1>Top selling</h1>
+          </div>
+        </div>
+        <div class="col-md-6">
+          <div>
+            <ul class="list-group list-group-horizontal">
+              <li><a href="">laptop</a></li>
+              <li><a href="">mobile</a></li>
+              <li><a href="">accessories</a></li>
+              <li><a href="">camera</a></li>
+              <li><a href="">gaming</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div> -->
+    <!--end best-sellers-section-->
+
+    <!--about-us-section-->
+    <div class="container-fluid bg-light mb-5">
+      <div class="row justify-content-center mt-5">
+        <div class="col-md-3">
+          <div class="mb-3" >
+            <img src="./images/accessories.webp" alt="" class="img-fluid mt-5"  style="width: 120%; height: 300px; object-fit: cover; " >
+          </div>
+        </div>
+        <div class="col-md-6">
+          <div class="text-center mt-3">
+            <h1 class="mb-3 text-orange">من نحن</h1>
+            <p>بدأنا عام 2003 من دمشق بافتتاح مركزنا لتقديم كافة خدمات الموبايل و اللابتوب و الكمبيوتر واكسسواراتها و قدمنا أعمال الصيانة الاحترافية لكافة أنواع الموبايل و اللابتوب للأفراد و الشركات و المؤسسات التعليمية واستمرينا حتى عام 2013 ثم نقلنا خدماتنا الى اسطنبول لنفتتح حينها أول مركز اتصالات و حواسيب سوري في اسطنبول وبفضل من الله قدمنا خدماتنا بكل إخلاص كما عهدنا زبائننا و أضفنا لخدماتنا مجال كميرات المراقبة و تصميم المواقع لنخدّم العديد من الشركات الهندسية والتعليمية في اسطنبول وبعد 12 عام في اسطنبول قررنا العودة إلى بلدنا الحبيب لنفتتح مجدداً مركزنا الجديد في دمشق لنضع بين أيديكم خبرة 22 عام و لنكون جزء من المتابعين و المساهمين في نهضة بلدنا الغالي سوريا
+</p>
+<div class="mt-4 pb-5">
+<p class="pb-4 fs-4 text-orange">موعدنا في دمشق</p>
+<span class="ms-4  rounded-pill p-4 fs-5 history">01</span>
+<span class="ms-4  rounded-pill p-4 fs-5 history">02</span>
+<span class="ms-4  rounded-pill p-4 fs-5 history">2026</span>
+       </div>   
+</div>
+        </div>
+        <div class="col-md-3">
+          <div class="mb-3">
+            <img src="./images/laptop.webp" alt="" class="img-fluid mt-5" style="width: 120%; height: 300px; object-fit: cover; "   >
           </div>
         </div>
       </div>
     </div>
 
 
-    <!--end banner-section-->
+    <!--end about-us-section-->
 
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js"></script>
