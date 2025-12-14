@@ -23,6 +23,10 @@
         --white-color: rgba(255, 255, 255);
       }
 
+      /* body{
+        padding-top: 150px;
+      } */
+
       .nav-link-color {
         color: var(--orange-color);
       }
@@ -85,8 +89,6 @@
 
       .image:hover .banner-img {
         transform: scale(1.2);
-       
-
       }
       .image .overlay {
         background: var(--orange-color);
@@ -109,16 +111,28 @@
         color: var(--white-color);
       }
 
-      .history{
-      
+      .history {
         border: 2px solid var(--orange-color);
       }
 
-
-      .history:hover{
+      .history:hover {
         border: 2px solid var(--navy-blue);
         background-color: var(--orange-color);
       }
+
+      .selling-list:hover {
+        color: var(--orange-color);
+      }
+
+      #indicator1{
+         background-color:transparent;
+        border: 2px solid grey;
+        width: 12px;
+        height: 12px;
+        border-radius: 50%;
+
+      }
+
 
       
     </style>
@@ -155,22 +169,22 @@
             </li>
             <li class="navbar-item ps-4 mb-3">
               <a
-                href=""
+                href="#TopSelling"
                 class="navbar-link text-decoration-none nav-link-color underline-hover"
                 >الأكثر مبيعاً</a
               >
             </li>
-            <li class="navbar-item dropdown  ps-4 mb-3">
+            <li class="navbar-item dropdown ps-4 mb-3">
               <a
                 href=""
-                class="navbar-link text-decoration-none dropdown-toggle nav-link-color "
+                class="navbar-link text-decoration-none dropdown-toggle nav-link-color"
                 role="button"
                 data-bs-toggle="dropdown"
                 data-bs-auto-close="outside"
                 >قسم الموبايل</a
               >
               <ul class="dropdown-menu">
-                <li><a href="" class="dropdown-item ">موبايلات جديدة</a></li>
+                <li><a href="" class="dropdown-item">موبايلات جديدة</a></li>
                 <li><a href="" class="dropdown-item">موبايلات مستعملة</a></li>
                 <li><a href="" class="dropdown-item">اكسسوارات الموبايل</a></li>
               </ul>
@@ -178,7 +192,7 @@
             <li class="navbar-item dropdown ps-4 mb-3">
               <a
                 href=""
-                class="navbar-link text-decoration-none dropdown-toggle nav-link-color "
+                class="navbar-link text-decoration-none dropdown-toggle nav-link-color"
                 role="button"
                 data-bs-toggle="dropdown"
                 data-bs-auto-close="outside"
@@ -193,7 +207,7 @@
             <li class="navbar-item dropdown ps-4 mb-3">
               <a
                 href=""
-                class="navbar-link text-decoration-none dropdown-toggle nav-link-color "
+                class="navbar-link text-decoration-none dropdown-toggle nav-link-color"
                 role="button"
                 data-bs-toggle="dropdown"
                 data-bs-auto-close="outside"
@@ -228,7 +242,7 @@
             </li>
             <li class="navbar-item mb-3">
               <a
-                href=""
+                href="#aboutUs"
                 class="navbar-link text-decoration-none ps-4 nav-link-color underline-hover"
                 >من نحن</a
               >
@@ -436,7 +450,7 @@
             />
 
             <div class="overlay position-absolute"></div>
-            <div class="text-box text-center ">
+            <div class="text-box text-center">
               <h2 class="mb-4">قسم الموبايل</h2>
               <a href="" class="text-decoration-none text-white pe-4 fs-5"
                 >عرض المنتجات
@@ -470,7 +484,7 @@
     <!--end banner-section-->
 
     <!--best-sellers-section-->
-  <!-- <div class="container">
+    <!-- <div class="container">
       <div class="row justify-content-between">
         <div class="col-md-3">
           <div>
@@ -493,36 +507,353 @@
     <!--end best-sellers-section-->
 
     <!--about-us-section-->
-    <div class="container-fluid bg-light mb-5">
+    <div class="container-fluid bg-light mb-5" id="aboutUs">
       <div class="row justify-content-center mt-5">
         <div class="col-md-3">
-          <div class="mb-3" >
-            <img src="./images/accessories.webp" alt="" class="img-fluid mt-5"  style="width: 120%; height: 300px; object-fit: cover; " >
+          <div class="mb-3">
+            <img
+              src="./images/accessories.webp"
+              alt=""
+              class="img-fluid mt-5 d-none d-md-block"
+              style="width: 120%; height: 300px; object-fit: cover"
+            />
           </div>
         </div>
         <div class="col-md-6">
           <div class="text-center mt-3">
             <h1 class="mb-3 text-orange">من نحن</h1>
-            <p>بدأنا عام 2003 من دمشق بافتتاح مركزنا لتقديم كافة خدمات الموبايل و اللابتوب و الكمبيوتر واكسسواراتها و قدمنا أعمال الصيانة الاحترافية لكافة أنواع الموبايل و اللابتوب للأفراد و الشركات و المؤسسات التعليمية واستمرينا حتى عام 2013 ثم نقلنا خدماتنا الى اسطنبول لنفتتح حينها أول مركز اتصالات و حواسيب سوري في اسطنبول وبفضل من الله قدمنا خدماتنا بكل إخلاص كما عهدنا زبائننا و أضفنا لخدماتنا مجال كميرات المراقبة و تصميم المواقع لنخدّم العديد من الشركات الهندسية والتعليمية في اسطنبول وبعد 12 عام في اسطنبول قررنا العودة إلى بلدنا الحبيب لنفتتح مجدداً مركزنا الجديد في دمشق لنضع بين أيديكم خبرة 22 عام و لنكون جزء من المتابعين و المساهمين في نهضة بلدنا الغالي سوريا
-</p>
-<div class="mt-4 pb-5">
-<p class="pb-4 fs-4 text-orange">موعدنا في دمشق</p>
-<span class="ms-4  rounded-pill p-4 fs-5 history">01</span>
-<span class="ms-4  rounded-pill p-4 fs-5 history">02</span>
-<span class="ms-4  rounded-pill p-4 fs-5 history">2026</span>
-       </div>   
-</div>
+            <p>
+              بدأنا عام 2003 من دمشق بافتتاح مركزنا لتقديم كافة خدمات الموبايل و
+              اللابتوب و الكمبيوتر واكسسواراتها و قدمنا أعمال الصيانة الاحترافية
+              لكافة أنواع الموبايل و اللابتوب للأفراد و الشركات و المؤسسات
+              التعليمية واستمرينا حتى عام 2013 ثم نقلنا خدماتنا الى اسطنبول
+              لنفتتح حينها أول مركز اتصالات و حواسيب سوري في اسطنبول وبفضل من
+              الله قدمنا خدماتنا بكل إخلاص كما عهدنا زبائننا و أضفنا لخدماتنا
+              مجال كميرات المراقبة و تصميم المواقع لنخدّم العديد من الشركات
+              الهندسية والتعليمية في اسطنبول وبعد 12 عام في اسطنبول قررنا العودة
+              إلى بلدنا الحبيب لنفتتح مجدداً مركزنا الجديد في دمشق لنضع بين
+              أيديكم خبرة 22 عام و لنكون جزء من المتابعين و المساهمين في نهضة
+              بلدنا الغالي سوريا
+            </p>
+            <div class="mt-4 pb-5">
+              <p class="pb-4 fs-4 text-orange">موعدنا في دمشق</p>
+              <span class="ms-4 rounded-pill shadow-lg p-4 fs-5 history"
+                >01</span
+              >
+              <span class="ms-4 rounded-pill shadow-lg p-4 fs-5 history"
+                >02</span
+              >
+              <span class="ms-4 rounded-pill shadow-lg p-4 fs-5 history"
+                >2026</span
+              >
+            </div>
+          </div>
         </div>
         <div class="col-md-3">
           <div class="mb-3">
-            <img src="./images/laptop.webp" alt="" class="img-fluid mt-5" style="width: 120%; height: 300px; object-fit: cover; "   >
+            <img
+              src="./images/laptop.webp"
+              alt=""
+              class="img-fluid mt-5 d-none d-md-block"
+              style="width: 120%; height: 300px; object-fit: cover"
+            />
           </div>
         </div>
       </div>
     </div>
 
-
     <!--end about-us-section-->
+
+    <!--top-selling-section-->
+    <div class="container" id="TopSelling">
+      <div class="row justify-content-between">
+        <div class="col-md-3">
+          <div>
+            <h2>الأكثر مبيعاً</h2>
+          </div>
+        </div>
+
+        <div class="col-md-9">
+          <div class="float-start">
+            <ul class="list-group list-group-flush list-group-horizontal">
+              <li class="list-group-item fs-5">
+                <a href="" class="text-orange text-decoration-none">الكل</a>
+              </li>
+              <li class="list-group-item fs-5">
+                <a href="" class="text-navy text-decoration-none selling-list"
+                  >موبايلات</a
+                >
+              </li>
+              <li class="list-group-item fs-5">
+                <a href="" class="text-navy text-decoration-none selling-list"
+                  >لابتوبات</a
+                >
+              </li>
+              <li class="list-group-item fs-5">
+                <a href="" class="text-navy text-decoration-none selling-list"
+                  >كميرات</a
+                >
+              </li>
+              <li class="list-group-item fs-5">
+                <a href="" class="text-navy text-decoration-none selling-list"
+                  >اكسسوارات</a
+                >
+              </li>
+            </ul>
+          </div>
+        </div>
+        </div>
+
+        <div class="row justify-content-center mt-4">
+          <div class="col-md-12">
+            <div
+              class="carousel slide "
+              id="slides-with-indicators"
+              data-bs-ride="carousel"
+            >
+              <div class="carousel-indicators">
+                <button
+                  class="active"
+                  id="indicator1"
+                  type="button"
+                  data-bs-target="#slides-with-indicators"
+                  data-bs-slide-to="0"
+                ></button>
+
+                <button
+                  class="active"
+                  id="indicator1"
+                  type="button"
+                  data-bs-target="#slides-with-indicators"
+                  data-bs-slide-to="1"
+                ></button>
+              </div>
+              <div class="carousel-inner">
+                <div class="carousel-item active">
+                  <div class="row justify-content-center mt-4 ">
+                    <div class="col-md-3 mb-3">
+                      <div class="border border-2 rounded border-warning-hover pb-3">
+                        <img
+                          src="./images/product01.png.webp"
+                          alt=""
+                          class="img-fluid"
+                        />
+                        <div class="text-center">
+                          <h5 class="text-secondary fs-4">لابتوبات</h5>
+                          <p class="fw-bold fs-4">لابتوب رقم 1</p>
+                          <p class="text-orange fs-4">
+                            980$<span
+                              class="text-secondary text-decoration-line-through ps-3 fs-5"
+                              >990$</span
+                            >
+                          </p>
+                          <span class="text-danger small"
+                            ><i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-regular fa-star"></i>
+                          </span>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-md-3 mb-3">
+                      <div class="border border-2 rounded pb-3 topS-h">
+                        <img
+                          src="./images/product07.png.webp"
+                          alt=""
+                          class="img-fluid"
+                        />
+                        <div class="text-center">
+                          <h5 class="text-secondary fs-4">موبايلات</h5>
+                          <p class="fw-bold fs-4">موبايل رقم 1</p>
+                          <p class="text-orange fs-4">
+                            980$<span
+                              class="text-secondary text-decoration-line-through ps-3 fs-5"
+                              >990$</span
+                            >
+                          </p>
+                          <span class="text-danger small"
+                            ><i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                          </span>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-md-3 mb-3">
+                      <div class="border border-2 rounded pb-3 topS-h">
+                        <img
+                          src="./images/product09.png.webp"
+                          alt=""
+                          class="img-fluid"
+                        />
+                        <div class="text-center">
+                          <h5 class="text-secondary fs-4">كميرات</h5>
+                          <p class="fw-bold fs-4">كميرا رقم 1</p>
+                          <p class="text-orange fs-4">
+                            980$<span
+                              class="text-secondary text-decoration-line-through ps-3 fs-5"
+                              >990$</span
+                            >
+                          </p>
+                          <span class="text-danger small"
+                            ><i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-regular fa-star"></i>
+                          </span>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-md-3 mb-3">
+                      <div class="border border-2 rounded pb-3 topS-h">
+                        <img
+                          src="./images/product05.png.webp"
+                          alt=""
+                          class="img-fluid"
+                        />
+                        <div class="text-center">
+                          <h5 class="text-secondary fs-4">اكسسوارات</h5>
+                          <p class="fw-bold fs-4">اكسسوارات رقم 1</p>
+                          <p class="text-orange fs-4">
+                            980$<span
+                              class="text-secondary text-decoration-line-through ps-3 fs-5"
+                              >990$</span
+                            >
+                          </p>
+                          <span class="text-danger small"
+                            ><i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                          </span>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="carousel-item">
+                  <div class="row justify-content-center mt-4">
+                    <div class="col-md-3 mb-3">
+                      <div class="border border-2 rounded pb-3 topS-h">
+                        <img
+                          src="./images/product03.png.webp"
+                          alt=""
+                          class="img-fluid"
+                        />
+                        <div class="text-center">
+                          <h5 class="text-secondary fs-4">لابتوبات</h5>
+                          <p class="fw-bold fs-4">لابتوب رقم 3</p>
+                          <p class="text-orange fs-4">
+                            980$<span
+                              class="text-secondary text-decoration-line-through ps-3 fs-5"
+                              >990$</span
+                            >
+                          </p>
+                          <span class="text-danger small"
+                            ><i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                          </span>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-md-3 mb-3">
+                      <div class="border border-2 rounded pb-3 topS-h">
+                        <img
+                          src="./images/product02.png.webp"
+                          alt=""
+                          class="img-fluid"
+                        />
+                        <div class="text-center">
+                          <h5 class="text-secondary fs-4">اكسسوارات</h5>
+                          <p class="fw-bold fs-4">اكسسوارات رقم 2</p>
+                          <p class="text-orange fs-4">
+                            980$<span
+                              class="text-secondary text-decoration-line-through ps-3 fs-5"
+                              >990$</span
+                            >
+                          </p>
+                          <span class="text-danger small"
+                            ><i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                          </span>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-md-3 mb-3">
+                      <div class="border border-2 rounded pb-3 topS-h">
+                        <img
+                          src="./images/product04.png.webp"
+                          alt=""
+                          class="img-fluid"
+                        />
+                        <div class="text-center">
+                          <h5 class="text-secondary fs-4">ايبادات</h5>
+                          <p class="fw-bold fs-4">ايباد رقم 1</p>
+                          <p class="text-orange fs-4">
+                            980$<span
+                              class="text-secondary text-decoration-line-through ps-3 fs-5"
+                              >990$</span
+                            >
+                          </p>
+                          <span class="text-danger small"
+                            ><i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-regular fa-star"></i>
+                          </span>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-md-3 mb-3">
+                      <div class="border border-2 rounded pb-3 topS-h">
+                        <img
+                          src="./images/product06.png.webp"
+                          alt=""
+                          class="img-fluid"
+                        />
+                        <div class="text-center">
+                          <h5 class="text-secondary fs-4">لابتوبات</h5>
+                          <p class="fw-bold fs-4">لابتوب رقم 2</p>
+                          <p class="text-orange fs-4">
+                            980$<span
+                              class="text-secondary text-decoration-line-through ps-3 fs-5"
+                              >990$</span
+                            >
+                          </p>
+                          <span class="text-danger small"
+                            ><i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                          </span>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      
+    </div>
+
+    <!--end top-selling-section-->
 
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js"></script>
